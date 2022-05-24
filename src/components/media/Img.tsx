@@ -20,7 +20,7 @@ const Img = ({ src }: Props) => {
   }, [addObject]);
 
   return (
-    <StyledImg src={src} onLoad={ImageLoadSuccess} loadSuccess={loadSuccess} />
+    <StyledImg src={src} onLoad={ImageLoadSuccess} onError={ImageLoadSuccess} loadSuccess={loadSuccess} />
   );
 };
 
