@@ -7,6 +7,7 @@ const DefaultStyled = styled.h1`
 
 interface Props {
   children: string;
+  className: string;
   textStyled?: StyledComponent<"h1", any, any>;
 }
 
@@ -17,7 +18,7 @@ interface Props {
  * @param textStyled styled-components element
  * @returns JSX component
  */
-const TextWrite = ({ children, textStyled }: Props) => {
+const TextWrite = ({ children, className, textStyled }: Props) => {
   const wordsList = children.split(" ");
   const Text = textStyled || DefaultStyled;
   // console.log(wordsList);
@@ -77,7 +78,7 @@ const TextWrite = ({ children, textStyled }: Props) => {
     }
   }, [textShowed, wordsList]);
 
-  return <Text>{textShowed.word}</Text>;
+  return <Text className={className}>{textShowed.word}</Text>;
 };
 
 export default TextWrite;

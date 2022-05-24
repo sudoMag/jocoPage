@@ -70,7 +70,7 @@ const WordsText = styled.h1`
   color: #ccdc29;
   font-size: 3em;
   margin: 15px 0;
-  `;
+`;
 
 const WritePointer = styled.h1`
   color: #ccdc29;
@@ -96,10 +96,13 @@ const Header = () => {
     <Container className="mobile-change orientation reverse">
       <PresentationContainer className="mobile-change all-screen-width">
         <Title>
-          <TextWrite textStyled={WordsText}>
+          <TextWrite
+            textStyled={WordsText}
+            className="mobile-change fontsize small"
+          >
             ♥Emprendimiento 💻Tecnología 🤩Innovación ⭐JOCO_GONZÁLEZ⭐
           </TextWrite>
-          <WritePointer>|</WritePointer>
+          <WritePointer className="mobile-change fontsize medium">|</WritePointer>
         </Title>
         <AboutMeButton>Sobre Mi</AboutMeButton>
       </PresentationContainer>

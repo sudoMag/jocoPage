@@ -57,6 +57,18 @@ const GeneralStyles = createGlobalStyle`
         }
       }
 
+      &.fontsize {
+        &.small {
+          font-size: 1.8em;
+        }
+        &.medium {
+          font-size: 2em;
+        }
+        &.gigant {
+          font-size: 3em;
+        }
+      }
+
       &.show-item {
         display: block;
       }
@@ -81,7 +93,7 @@ const App = () => {
       <MainContainer id="App">
         <GeneralStyles theme={theme} />
         <Loader />
-        <Navbar/>
+        <Navbar />
         <Router>
           <Routes>
             <Route index path="/" element={<Home />} />
