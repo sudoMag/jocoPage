@@ -10,7 +10,9 @@ const NavOptions = styled.div`
   display: flex;
   flex-direction: row;
 
-  & div {
+  & li {
+    display: block;
+    text-align: center;
     margin: auto 0.8em;
     line-height: 1;
     font-size: 1em;
@@ -36,8 +38,8 @@ const NavOptions = styled.div`
       }
     }}
 
-    & div {
-      margin: 10px auto;
+    & li {
+      margin: 20px auto;
       font-size: 1.3em;
     }
   }

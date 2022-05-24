@@ -35,7 +35,9 @@ const Logo = styled.div`
   margin: auto auto auto 40px;
 `;
 
-const LiveButton = styled.div`
+const LiveButton = styled.li`
+  display: block;
+  text-align: center;
   font-weight: bold;
   background-color: #ccdc29;
   padding: 0.8em 1.8em;
@@ -61,6 +63,7 @@ const Email = styled.div`
 
 const OptionsButton = styled.button`
   margin: auto 50px auto auto;
+  cursor: pointer;
   display: none;
   background-color: #ccdc29;
   width: 44px;
@@ -75,7 +78,7 @@ const OptionsButton = styled.button`
 `;
 
 const Navbar = () => {
-  const {show, toggleVisibility} = useVisibility(false);
+  const { show, toggleVisibility } = useVisibility(false);
 
   return (
     <>
@@ -103,17 +106,19 @@ const Navbar = () => {
           <Img src="./logo-dark-joco.png" />
         </Logo>
         <NavOptions show={show}>
-          <div>Sobre Joco</div>
-          <div>Podcast</div>
-          <div>Servicios</div>
-          <div>Eventos</div>
-          <div>Blog</div>
-          <div>Contactos</div>
+          <li>Sobre Joco</li>
+          <li>Podcast</li>
+          <li>Servicios</li>
+          <li>Eventos</li>
+          <li>Blog</li>
+          <li>Contactos</li>
           <LiveButton>LIVE</LiveButton>
         </NavOptions>
         <OptionsButton
           className="mobile-change show-item"
-          onClick={() => {toggleVisibility()}}
+          onClick={() => {
+            toggleVisibility();
+          }}
         >
           <MenuIcon />
         </OptionsButton>
