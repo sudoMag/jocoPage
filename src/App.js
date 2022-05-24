@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Home } from "./pages/Home";
 import NotFoundErrorPage from "./pages/404";
 import Loader from "./pages/loader";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/navbar/Navbar";
 
 const GeneralStyles = createGlobalStyle`
   ${(props) => {
