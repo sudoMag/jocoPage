@@ -1,6 +1,7 @@
 import { useEffect, useState, useContext } from "react";
 import styled from "styled-components";
 import Opacity from "../components/animations/Opacity";
+import LoadProgressBar from "../components/LoadProgressBar";
 import Img from "../components/media/Img";
 import { LoadContext } from "../context/context";
 
@@ -19,6 +20,7 @@ const Curtain = styled.div`
   animation: ${Opacity} 200ms 0ms linear forwards;
   z-index: 5;
   display: flex;
+  flex-direction: column;
 
   ${({ loadSucces }: Props) => {
     if (loadSucces === true) {
@@ -28,7 +30,8 @@ const Curtain = styled.div`
 
   & img {
     width: 100px;
-    margin: auto;
+    height: 100px;
+    margin: auto auto 30px auto;
   }
 `;
 
@@ -48,6 +51,7 @@ const Loader = () => {
   return (
     <Curtain loadSucces={loadStatus}>
       <Img src="./joco-icon.png" />
+      <LoadProgressBar porcentage={objectsLoaded.porcent}/>
     </Curtain>
   );
 };

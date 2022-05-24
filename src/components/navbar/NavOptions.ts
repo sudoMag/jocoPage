@@ -29,7 +29,6 @@ const NavOptions = styled.div`
     width: 100%;
     height: calc(100vh - 90px);
     ${({ show }: NavProps) => {
-      console.log(show);
       if (show) {
         return css`
           display: flex;
