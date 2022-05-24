@@ -40,7 +40,6 @@ const Loader = () => {
   const [loadStatus, setLoadStatus] = useState(false);
 
   useEffect(() => {
-    console.log(objectsToLoad, objectsLoaded.number);
     if (objectsToLoad !== 0 && objectsToLoad === objectsLoaded.number) {
       setLoadStatus(true);
     } else {

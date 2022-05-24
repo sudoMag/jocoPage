@@ -1,11 +1,5 @@
-import Header from "../../components/Header";
-import styled from "styled-components";
-import Img from "../../components/media/Img";
-import Capture4 from "../../components/media/screenshots/capture_4.png";
-
-const Div = styled.section`
-  height: 100vh;
-`;
+import Header from "./Header";
+import { About } from "./About";
 
 export const Home = ({ ...args }) => {
   console.log(
@@ -16,7 +10,7 @@ export const Home = ({ ...args }) => {
   return (
     <>
       <Header/>
-      <Div><Img src={Capture4}/></Div>
+      <About/>
     </>
   );
 };

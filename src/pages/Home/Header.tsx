@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import float from "./animations/float";
-import Img from "./media/Img";
-import TextWrite from "./TextWrite";
+import float from "../../components/animations/float";
+import Img from "../../components/media/Img";
+import TextWrite from "../../components/TextWrite";
 
 const Container = styled.section`
   display: flex;

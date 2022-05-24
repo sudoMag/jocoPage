@@ -14,7 +14,6 @@ const Progress = styled.div`
   background-color: #c9d92a;
   transition-duration: 200ms;
   ${({ porcentage }: { porcentage: number }) => {
-    console.log(porcentage);
       return css`width: ${porcentage}%`;
     }
   }
