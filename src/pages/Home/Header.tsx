@@ -9,6 +9,7 @@ const Container = styled.section`
   height: calc(100vh - 130px);
   background-color: #1141a1;
   overflow: hidden;
+  position: relative;
 `;
 
 const Astronaut = styled.div`
