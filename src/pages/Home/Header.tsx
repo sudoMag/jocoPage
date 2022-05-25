@@ -7,7 +7,7 @@ const Container = styled.section`
   display: flex;
   width: 100%;
   height: calc(100vh - 130px);
-  background-color: #1141a1;
+  background-color: #0a0660;
   overflow: hidden;
   position: relative;
 `;
@@ -30,7 +30,7 @@ const Planet = styled.div`
   & #circle1 {
     border-radius: 50%;
     position: absolute;
-    background-color: #092a6b;
+    background-color: #060b3e;
     width: 120vw;
     height: 120vw;
   }
@@ -38,7 +38,7 @@ const Planet = styled.div`
   & #circle2 {
     border-radius: 50%;
     position: absolute;
-    background-color: #06203e;
+    background-color: #100524;
     width: 80vw;
     height: 80vw;
   }
