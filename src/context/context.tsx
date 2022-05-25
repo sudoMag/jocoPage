@@ -22,7 +22,7 @@ interface Props {
 }
 
 export const ContextWrapper = ({ children }: Props) => {
-  const pepe = useRef(0);
+  const objectsCounter = useRef(0);
   const [objectsToLoad, setObjectsToLoad] = useState(0);
   const [objectsLoaded, setObjectsLoaded] = useState({
     number: 0,
@@ -30,7 +30,7 @@ export const ContextWrapper = ({ children }: Props) => {
   });
 
   const addObject = (): void => {
-    pepe.current += 1;
+    objectsCounter.current += 1;
   };
 
   const removeObject = (): void => {
@@ -48,8 +48,8 @@ export const ContextWrapper = ({ children }: Props) => {
   };
 
   useEffect(() => {
-    setObjectsToLoad( pepe.current );
-  }, [pepe])
+    setObjectsToLoad( objectsCounter.current );
+  }, [objectsCounter])
 
   return (
     <LoadContext.Provider value={{ objectsToLoad, objectsLoaded, addObject, removeObject }}>
