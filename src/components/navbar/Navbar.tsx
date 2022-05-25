@@ -43,14 +43,16 @@ const LiveButton = styled.li`
   padding: 0.8em 1.8em;
   line-height: 1;
   border-radius: 8px;
+  cursor: pointer;
 
   &:hover {
   }
 `;
 
-const IconsContainers = styled.div`
+const IconsContainers = styled.a`
   margin: auto;
   display: flex;
+  cursor: pointer;
 `;
 
 const Email = styled.div`

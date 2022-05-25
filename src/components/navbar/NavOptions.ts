@@ -16,6 +16,7 @@ const NavOptions = styled.div`
     margin: auto 0.8em;
     line-height: 1;
     font-size: 1em;
+    cursor: pointer;
   }
 
   @media only screen and (max-width: 800px) {
